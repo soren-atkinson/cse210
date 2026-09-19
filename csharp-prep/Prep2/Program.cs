@@ -6,28 +6,30 @@ internal class Program
     {
         Console.Write("What is your Grade %? ");
         int grade = Console.ReadLine();
-
+        char letter;
 
         if (grade >= 90)
         {
-            Console.WriteLine("You have an A");
+            letter = A;
         }
         else if (grade >= 80)
         {
-            Console.WriteLine("You have an B");
+            letter = B;
         }
         else if (grade >= 70)
         {
-            Console.WriteLine("You have an C");
+            letter = C;
         }
         else if (grade >= 60)
         {
-            Console.WriteLine("You have an D");
+            letter = D;
         }
         else if (grade < 60)
         {
-            Console.WriteLine("You have an F");
+            letter = F;
         }
+
+        Console.WriteLine($"You have an {letter}.");
 
         if (grade >= 70)
         {
