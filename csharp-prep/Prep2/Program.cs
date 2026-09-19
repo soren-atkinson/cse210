@@ -38,7 +38,7 @@ internal class Program
         }
         else
         {
-            Console.WriteLine("Better Luck Next Time");
+            Console.WriteLine("Better Luck Next Time!");
         }
     }
 }
