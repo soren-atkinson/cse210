@@ -5,35 +5,36 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.Write("What is your Grade %? ");
-        int grade = Console.ReadLine();
+        string userInput = Console.ReadLine();
+        int grade = int.Parse(userInput);
         char letter;
 
         if (grade >= 90)
         {
-            letter = A;
+            letter = 'A';
         }
         else if (grade >= 80)
         {
-            letter = B;
+            letter = 'B';
         }
         else if (grade >= 70)
         {
-            letter = C;
+            letter = 'C';
         }
         else if (grade >= 60)
         {
-            letter = D;
+            letter = 'D';
         }
-        else if (grade < 60)
+        else
         {
-            letter = F;
+            letter = 'F';
         }
 
         Console.WriteLine($"You have an {letter}.");
 
         if (grade >= 70)
         {
-            Console.WriteLine("congratulations!");
+            Console.WriteLine("Congratulations!");
         }
         else
         {
