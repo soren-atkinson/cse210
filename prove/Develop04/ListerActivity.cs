@@ -27,12 +27,14 @@ public class ListerActivity : Activity{
             "What are things that you have accomplished recently?"
         };
         Random random = new Random();
+
         Console.WriteLine("List as many answers as you can to the following prompt: ");
         int index = random.Next(prompts.Count);
         Console.WriteLine($"--- {prompts[index]} ---");
         Console.Write("You may begin in: ");
         ShowCounter(5);
         Console.Clear();
+        
         DateTime startTime = DateTime.Now;
         int i = 0;
         while ((DateTime.Now - startTime).TotalSeconds < _duration){

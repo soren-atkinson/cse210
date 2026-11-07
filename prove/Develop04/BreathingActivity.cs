@@ -11,6 +11,7 @@ public class BreathingActivity : Activity{
     public void InteractBreathing(){
         InteractProlouge();
         DateTime startTime = DateTime.Now;
+        
         while((DateTime.Now - startTime).TotalSeconds < _duration){
         Console.Write("\n\nBreath In...");
         ShowCounter(5);

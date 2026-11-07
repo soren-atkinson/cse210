@@ -44,10 +44,12 @@ public class ReflectionActivity : Activity{
         Console.WriteLine($"--- {prompts[index]} ---");
         Console.WriteLine("When you have something in mind, press enter to continue.");
         Console.ReadLine();
+        
         Console.WriteLine("Now ponder on each of the following questions as they relate to this experience.\n");
         Console.Write("You may begin in: ");
         ShowCounter(5);
         Console.Clear();
+
         DateTime startTime = DateTime.Now;
         while ((DateTime.Now - startTime).TotalSeconds < _duration)
         {
