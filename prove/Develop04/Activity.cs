@@ -28,7 +28,7 @@ public class Activity{
     public void InteractEpilouge(){
         Console.WriteLine("\n\nWell Done!!");
         ShowSpinner(3);
-        Console.WriteLine($"\nYou completed another {_duration} secconds in {_title}.");
+        Console.WriteLine($"\nYou completed another {_duration} seconds in {_title}.");
         ShowSpinner(3);
         Console.Clear();
     }
